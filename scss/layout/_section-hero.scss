@@ -1,0 +1,59 @@
+@use '../abstracts/variables' as vars;
+
+.section-hero {
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url('../img/images/default.jpg') center/cover no-repeat;
+  color: vars.$text-main;
+  padding: 6rem 2rem;
+  text-align: center;
+
+  .hero-content {
+    max-width: 800px;   // limita el ancho del texto
+    margin: 0 auto;     // centra el bloque
+    text-align: center; // asegura alineación
+
+    h1, h2 {
+      font-family: vars.$font-title;
+      margin-bottom: 1rem;
+      color: vars.$accent;
+    }
+
+    p {
+      font-family: vars.$font-body;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+  }
+}
+
+/* Variantes con imágenes distintas */
+.stories {
+  @extend .section-hero;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                    url('../img/images/Iceland04.jpg');
+}
+
+.destinations-hero {
+  @extend .section-hero;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                    url('../img/images/Iceland02.jpg');
+}
+
+.planning-hero {
+  @extend .section-hero;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                    url('../img/images/Egypt03.jpg');
+}
+
+.blog-hero {
+  @extend .section-hero; 
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                    url('../img/images/Peru02.jpg'); // reemplaza con tu imagen
+}
+
+.contact-hero {
+  @extend .section-hero;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                    url('../img/images/Nepal01.jpg'); // pon tu imagen de fondo
+}

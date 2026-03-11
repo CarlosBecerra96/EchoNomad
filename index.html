@@ -1,93 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EchoNomad-site</title>
+    <title>EchoNomad - Viajes</title>
+<!-- Tipografías -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+<!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<!-- Estilos compilados de SASS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-    <header class="MENU">
-        <nav>
-            <a href="./index.html"><img src="img/logos/EN LOGO 05LOGO.png" alt="EchoNomad Logo" width="300"></a>
-            <UL>
-                <li><a href="../index.html">Home</a></li>
-                <LI><a href="./pages/destinations.html">Destinos</a></LI>
-                <LI><a href="./pages/planning.html">Planeación</a></LI>
-                <LI><a href="./pages/blog.html">Blog</a></LI>
-                <LI><a href="./pages/contact.html">Contacto</a></LI>
-            </UL>
+<!-- Header / Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a href="./index.html" class="navbar-brand">
+                <img src="img/logos/EN LOGO 05LOGO.png" alt="EchoNomad Logo" class="img-fluid" width="150">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/destinations.html">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/planning.html">Planeación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/contact.html">Contacto</a></li>
+                </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
-        
-        <section class="hero">
-            <img src="./img/images/HERO-IMAGE-01.jpg" alt="Hero Image">
-            <div>
-                <h1>Explora el mundo</h1>
-                <h2>Un sueño a la vez</h2>
+<!-- Hero -->
+    <section class="hero d-flex align-items-center text-center text-white">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Explora el mundo</h1>
+            <h2 class="lead">Un sueño a la vez</h2>
+            <a href="#destinos" class="btn btn-primary btn-lg mt-3">Ver destinos</a>
+        </div>
+    </section>
+
+<!-- Intro -->
+    <section class="container my-5">
+        <p>Bienvenido a Echo Nomad, un espacio donde los destinos soñados se convierten en planes reales. Aquí comparto mi lista de lugares por descubrir, historias que inspiran y rutas que resuenan con el alma viajera.</p>
+    </section>
+
+<!-- Discover the World -->
+    <section class="discover container my-5">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6 text-center">
+                <img src="./img/images/WORLDMAP.png" alt="Mapa del mundo" class="img-fluid">
             </div>
-        </section>
+            <div class="col-12 col-md-6 text-center text-md-start">
+                <h2 class="fw-bold">Discover the World</h2>
+                <p class="lead">
+                Hemos escrito más de 600+ guías de viaje e itinerarios para ayudarte a planear tu viaje soñado alrededor del mundo.
+                </p>
+                <a href="./pages/destinations.html" class="btn btn-primary btn-lg">Explorar destinos →</a>
+            </div>
+        </div>
+</section>
+<!-- Rutas -->
+    <section class="container my-5" id="destinos">
+        <h2 class="text-center mb-4">Rutas para Descubrir</h2>
+        <ul class="routes-grid">
+            <li><img src="./img/images/iCELANDMAP.png" alt="Islandia" class="img-fluid"><span>Islandia</span></li>
+            <li><img src="./img/images/MONGOLIAMAP.png" alt="Mongolia" class="img-fluid"><span>Mongolia</span></li>
+            <li><img src="./img/images/NEPALMAP.png" alt="Tibet" class="img-fluid"><span>Tibet</span></li>
+            <li><img src="./img/images/PERUMAP.png" alt="Perú" class="img-fluid"><span>Perú</span></li>
+            <li><img src="./img/images/EGYPTMAP.png" alt="Egipto" class="img-fluid"><span>Egipto</span></li>
+        </ul>
+    </section>
 
-        <section>
-            <p>Bienvenido a Echo Nomad, un espacio donde los destinos soñados se convierten en planes reales. Aquí comparto mi lista de lugares por descubrir, historias que inspiran y rutas que resuenan con el alma viajera.</p>
-        </section>
+<!-- Historias -->
+<section class="section-hero stories">
+    <div class="hero-content">
+        <h2>Historias que Inspiran</h2>
+        <p>
+        Desde las vastas llanuras de Mongolia hasta las majestuosas montañas de Nepal,
+        cada destino tiene una historia que contar. Descubre relatos de aventuras pasadas
+        y sueños futuros que alimentan mi pasión por viajar.
+        </p>
+    </div>
+</section>
 
-        <section>
-            <img src="./img/images/WORLDMAP.png" alt="World Map" width="600">
-        </section>
+<!-- Footer -->
+<footer class="site-footer text-white">
+    <div class="container py-5">
+        <div class="row">
+        <!-- Logo y nombre -->
+        <div class="col-12 col-md-4 text-center text-md-start mb-4 mb-md-0">
+            <img src="img/logos/EN LOGO 05LOGO.png" alt="EchoNomad Logo" width="300" class="mb-3">
+        </div>
 
-        <section>
-            <h2>Rutas para Descubrir</h2>
-            <ul>
-                <img src="./img/images/iCELANDMAP.png" alt="Iceland Map" width="100">
-                <li>Islandia</li>
-                <img src="./img/images/MONGOLIAMAP.png" alt="Mongolia Map" width="100">
-                <li>Mongolia</li>
-                <img src="./img/images/NEPALMAP.png" alt="Nepal Map" width="100">
-                <li>Tibet</li>
-                <img src="./img/images/PERUMAP.png" alt="Peru Map" width="100">
-                <li>Peru</li>
-                <img src="./img/images/EGYPTMAP.png" alt="Egyp Map" width="100">
-                <li>Egipto</li>
+        <!-- Menú -->
+        <div class="col-12 col-md-4 text-center text-md-start mb-4 mb-md-0">
+            <h4 class="fw-bold mb-3">Menú</h4>
+            <ul class="list-unstyled">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pages/destinations.html">Destinos</a></li>
+            <li><a href="./pages/planning.html">Planeación</a></li>
+            <li><a href="./pages/blog.html">Blog</a></li>
+            <li><a href="./pages/contact.html">Contacto</a></li>
             </ul>
-        </section>
+        </div>
 
-        <SEction>
-            <h2>Historias que Inspiran</h2>
-            <p>Desde las vastas llanuras de Mongolia hasta las majestuosas montañas de Nepal, cada destino tiene una historia que contar. Descubre relatos de aventuras pasadas y sueños futuros que alimentan mi pasión por viajar.</p>
-        </SEction>
-    
-    </main>
+        <!-- Contacto -->
+        <div class="col-12 col-md-4 text-center text-md-start">
+            <h4 class="fw-bold mb-3">Contáctame</h4>
+            <p>Email: info@echonomad.com</p>
+            <p>Tel: +57 123-456-7890</p>
+            <p>Fax: +57 123-456-7890</p>
+        </div>
+        </div>
 
-    <footer>
-        <section>
-            <h2>Sígueme en Redes Sociales</h2>
-            <ul>
-                <a href="https://www.facebook.com/" target="_blank">
-                <img src="./img/icons/Facebook Icon.png" alt="facebook-logo" width="50">
-                </a>
-                <a href="https://www.instagram.com/" target="_blank">
-                <img src="./img/icons/Instagram Icon.png" alt="instagram-logo" width="50">
-                </a>
-                <a href="https://www.x.com/" target="_blank">
-                <img src="./img/icons/X Icon.png" alt="x-logo" width="50">
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                <img src="./img/icons/Youtube Icon.png" alt="youtube-logo" width="50">
-                </a>
-                <a href="https://www.pinterest.com/" target="_blank">
-                <img src="./img/icons/Pintrest Icon.png" alt="spotify-logo" width="50">
-                </a>
-            </ul>
-        </section>
-        <p>&copy; 2026 EchoNomad. Todos los derechos reservados.Construido y diseñado por Carlos Becerra.</p>
-    </footer>
+        <!-- Firma -->
+        <div class="row mt-4">
+        <div class="col text-center">
+            <p class="fst-italic">Construido con pasión. Diseñado por Carlos Becerra</p>
+            <p class="small">&copy; 2026 EchoNomad. Todos los derechos reservados.</p>
+        </div>
+        </div>
+    </div>
+</footer>
 
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

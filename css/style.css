@@ -1,0 +1,289 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #1d1f26;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+  color: #b36925;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  color: #cccccc;
+}
+
+.section-hero, .contact-hero, .blog-hero, .planning-hero, .destinations-hero, .stories {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/images/default.jpg") center/cover no-repeat;
+  color: #ffffff;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+.section-hero .hero-content, .contact-hero .hero-content, .blog-hero .hero-content, .planning-hero .hero-content, .destinations-hero .hero-content, .stories .hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.section-hero .hero-content h1, .contact-hero .hero-content h1, .blog-hero .hero-content h1, .planning-hero .hero-content h1, .destinations-hero .hero-content h1, .stories .hero-content h1, .section-hero .hero-content h2, .contact-hero .hero-content h2, .blog-hero .hero-content h2, .planning-hero .hero-content h2, .destinations-hero .hero-content h2, .stories .hero-content h2 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1rem;
+  color: #b36925;
+}
+.section-hero .hero-content p, .contact-hero .hero-content p, .blog-hero .hero-content p, .planning-hero .hero-content p, .destinations-hero .hero-content p, .stories .hero-content p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Variantes con imágenes distintas */
+.stories {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/images/Iceland04.jpg");
+}
+
+.destinations-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/images/Iceland02.jpg");
+}
+
+.planning-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/images/Egypt03.jpg");
+}
+
+.blog-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/images/Peru02.jpg");
+}
+
+.contact-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/images/Nepal01.jpg");
+}
+
+.planning-tools {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.planning-tools h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #b36925;
+}
+.planning-tools .tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.planning-tools .tools-grid .tool-card {
+  background-color: rgb(51.0746268657, 54.5970149254, 66.9253731343);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+.planning-tools .tools-grid .tool-card h3 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 0.5rem;
+  color: #b36925;
+}
+.planning-tools .tools-grid .tool-card p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  color: #cccccc;
+}
+.planning-tools .tools-grid .tool-card:hover {
+  transform: translateY(-5px);
+}
+
+.latest-posts h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #b36925;
+}
+.latest-posts .blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+}
+.latest-posts .blog-grid .card {
+  background-color: rgb(51.0746268657, 54.5970149254, 66.9253731343);
+  border-radius: 8px;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+.latest-posts .blog-grid .card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+.latest-posts .blog-grid .card h3 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 0.5rem;
+  color: #b36925;
+}
+.latest-posts .blog-grid .card p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #cccccc;
+}
+.latest-posts .blog-grid .card:hover {
+  transform: translateY(-5px);
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/images/HERO-IMAGE-01.jpg") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+}
+.hero h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #b36925;
+}
+
+.featured-destinations {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.featured-destinations h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #b36925;
+}
+.featured-destinations .destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.featured-destinations .destinations-grid .destination-card {
+  background-color: rgb(51.0746268657, 54.5970149254, 66.9253731343);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+.featured-destinations .destinations-grid .destination-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+.featured-destinations .destinations-grid .destination-card h3 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 0.5rem;
+  color: #b36925;
+}
+.featured-destinations .destinations-grid .destination-card p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  color: #cccccc;
+}
+.featured-destinations .destinations-grid .destination-card:hover {
+  transform: translateY(-5px);
+}
+
+.discover h2 {
+  font-family: "Playfair Display", serif;
+  color: #b36925;
+  margin-bottom: 1rem;
+}
+.discover p {
+  font-family: "Montserrat", sans-serif;
+  color: #cccccc;
+  margin-bottom: 1.5rem;
+}
+.discover img {
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+.discover img:hover {
+  transform: scale(1.05);
+}
+.discover a.btn {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.discover a.btn:hover {
+  background-color: rgb(136.7361111111, 80.2083333333, 28.2638888889);
+  transform: translateY(-3px);
+}
+
+.site-footer {
+  background: linear-gradient(rgba(29, 31, 38, 0.95), rgba(29, 31, 38, 0.95)), url("../img/images/Mountains Colorado 01.jpeg") center/cover no-repeat;
+  color: #ffffff;
+}
+.site-footer h3, .site-footer h4 {
+  font-family: "Playfair Display", serif;
+  color: #b36925;
+}
+.site-footer a {
+  color: #cccccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.site-footer a:hover {
+  color: #b36925;
+}
+.site-footer p {
+  margin: 0.3rem 0;
+  color: #cccccc;
+}
+.site-footer .fst-italic {
+  color: white;
+}
+
+.routes-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+.routes-grid li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 120px;
+}
+.routes-grid li img {
+  height: 150px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(100%) brightness(0.8);
+}
+.routes-grid li span {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+}
+.routes-grid li:hover img {
+  filter: none;
+  transform: scale(1.1);
+}
+.routes-grid li:hover span {
+  color: #b36925;
+}
+
+/*# sourceMappingURL=style.css.map */

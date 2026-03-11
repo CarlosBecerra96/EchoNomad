@@ -1,0 +1,18 @@
+@use '../abstracts/variables' as vars;
+
+body {
+  font-family: vars.$font-body;
+  background-color: vars.$bg-main;
+  color: vars.$text-main;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: vars.$font-title;
+  color: vars.$accent;
+}
+
+p {
+  font-family: vars.$font-body;
+  color: vars.$text-secondary;
+}

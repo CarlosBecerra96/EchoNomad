@@ -1,0 +1,32 @@
+@use 'sass:color';
+@use '../abstracts/variables' as vars;
+
+.site-footer {
+  background: linear-gradient(rgba(29,31,38,0.95), rgba(29,31,38,0.95)),
+              url('../img/images/Mountains Colorado 01.jpeg') center/cover no-repeat;
+  color: vars.$text-main;
+
+  h3, h4 {
+    font-family: vars.$font-title;
+    color: vars.$accent;
+  }
+
+  a {
+    color: vars.$text-secondary;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: vars.$accent;
+    }
+  }
+
+  p {
+    margin: 0.3rem 0;
+    color: vars.$text-secondary;
+  }
+
+  .fst-italic {
+    color: color.adjust(vars.$text-secondary, $lightness: 20%);
+  }
+}

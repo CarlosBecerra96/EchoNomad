@@ -1,0 +1,35 @@
+@use 'sass:color';
+@use '../abstracts/variables' as vars;
+
+.discover {
+  h2 {
+    font-family: vars.$font-title;
+    color: vars.$accent;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-family: vars.$font-body;
+    color: vars.$text-secondary;
+    margin-bottom: 1.5rem;
+  }
+
+  img {
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  a.btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      background-color: color.adjust(vars.$accent, $lightness: -10%);
+      transform: translateY(-3px);
+    }
+  }
+}

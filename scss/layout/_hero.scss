@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as vars;
+@use '../abstracts/mixins' as mix;
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('../img/images/HERO-IMAGE-01.jpg') center/cover no-repeat;
+  height: 100vh;
+  @include mix.flex-center;
+  text-align: center;
+  color: vars.$text-main;
+
+  h1 {
+    font-family: vars.$font-title;
+    font-weight: 800;
+  }
+
+  h2 {
+    font-family: vars.$font-title;
+    font-weight: 700;
+    color: vars.$accent;
+  }
+}
