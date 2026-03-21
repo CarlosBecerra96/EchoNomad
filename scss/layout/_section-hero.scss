@@ -3,15 +3,15 @@
 .section-hero {
   position: relative;
   background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-              url('../img/images/default.jpg') center/cover no-repeat;
+              url('../img/images/HERO-IMAGE-01.webp') center/cover no-repeat;
   color: vars.$text-main;
   padding: 6rem 2rem;
   text-align: center;
 
   .hero-content {
-    max-width: 800px;   // limita el ancho del texto
-    margin: 0 auto;     // centra el bloque
-    text-align: center; // asegura alineación
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center; 
 
     h1, h2 {
       font-family: vars.$font-title;
@@ -28,32 +28,38 @@
 }
 
 /* Variantes con imágenes distintas */
+.welcome-hero {
+  @extend .section-hero;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                    url('../img/images/Nepal04.webp');
+}
+
 .stories {
   @extend .section-hero;
   background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                    url('../img/images/Iceland04.jpg');
+                    url('../img/images/Iceland04.webp');
 }
 
 .destinations-hero {
   @extend .section-hero;
   background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                    url('../img/images/Iceland02.jpg');
+                    url('../img/images/Iceland02.webp');
 }
 
 .planning-hero {
   @extend .section-hero;
   background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                    url('../img/images/Egypt03.jpg');
+                    url('../img/images/Egypt03.webp');
 }
 
 .blog-hero {
   @extend .section-hero; 
   background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                    url('../img/images/Peru02.jpg'); // reemplaza con tu imagen
+                    url('../img/images/Peru02.webp'); 
 }
 
 .contact-hero {
   @extend .section-hero;
   background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                    url('../img/images/Nepal01.jpg'); // pon tu imagen de fondo
+                    url('../img/images/Nepal01.webp'); 
 }

@@ -22,48 +22,52 @@ p {
   color: #cccccc;
 }
 
-.section-hero, .contact-hero, .blog-hero, .planning-hero, .destinations-hero, .stories {
+.section-hero, .contact-hero, .blog-hero, .planning-hero, .destinations-hero, .stories, .welcome-hero {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/images/default.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/images/HERO-IMAGE-01.webp") center/cover no-repeat;
   color: #ffffff;
   padding: 6rem 2rem;
   text-align: center;
 }
-.section-hero .hero-content, .contact-hero .hero-content, .blog-hero .hero-content, .planning-hero .hero-content, .destinations-hero .hero-content, .stories .hero-content {
+.section-hero .hero-content, .contact-hero .hero-content, .blog-hero .hero-content, .planning-hero .hero-content, .destinations-hero .hero-content, .stories .hero-content, .welcome-hero .hero-content {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
-.section-hero .hero-content h1, .contact-hero .hero-content h1, .blog-hero .hero-content h1, .planning-hero .hero-content h1, .destinations-hero .hero-content h1, .stories .hero-content h1, .section-hero .hero-content h2, .contact-hero .hero-content h2, .blog-hero .hero-content h2, .planning-hero .hero-content h2, .destinations-hero .hero-content h2, .stories .hero-content h2 {
+.section-hero .hero-content h1, .contact-hero .hero-content h1, .blog-hero .hero-content h1, .planning-hero .hero-content h1, .destinations-hero .hero-content h1, .stories .hero-content h1, .welcome-hero .hero-content h1, .section-hero .hero-content h2, .contact-hero .hero-content h2, .blog-hero .hero-content h2, .planning-hero .hero-content h2, .destinations-hero .hero-content h2, .stories .hero-content h2, .welcome-hero .hero-content h2 {
   font-family: "Playfair Display", serif;
   margin-bottom: 1rem;
   color: #b36925;
 }
-.section-hero .hero-content p, .contact-hero .hero-content p, .blog-hero .hero-content p, .planning-hero .hero-content p, .destinations-hero .hero-content p, .stories .hero-content p {
+.section-hero .hero-content p, .contact-hero .hero-content p, .blog-hero .hero-content p, .planning-hero .hero-content p, .destinations-hero .hero-content p, .stories .hero-content p, .welcome-hero .hero-content p {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   line-height: 1.6;
 }
 
 /* Variantes con imágenes distintas */
+.welcome-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/images/Nepal04.webp");
+}
+
 .stories {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/images/Iceland04.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/images/Iceland04.webp");
 }
 
 .destinations-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/images/Iceland02.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/images/Iceland02.webp");
 }
 
 .planning-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/images/Egypt03.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/images/Egypt03.webp");
 }
 
 .blog-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/images/Peru02.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/images/Peru02.webp");
 }
 
 .contact-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/images/Nepal01.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/images/Nepal01.webp");
 }
 
 .planning-tools {
@@ -138,22 +142,27 @@ p {
 }
 
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/images/HERO-IMAGE-01.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/images/HERO-IMAGE-01.webp") center/cover no-repeat;
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  color: #ffffff;
+  justify-content: flex-start;
+  padding-left: 5%;
+  text-align: left;
+  color: #fff;
 }
 .hero h1 {
   font-family: "Playfair Display", serif;
   font-weight: 800;
+  font-size: 4rem;
+  color: #fff;
 }
 .hero h2 {
   font-family: "Playfair Display", serif;
   font-weight: 700;
-  color: #b36925;
+  font-size: 3.5rem;
+  color: #fff;
+  margin-bottom: 16pt;
 }
 
 .featured-destinations {
@@ -284,6 +293,22 @@ p {
 }
 .routes-grid li:hover span {
   color: #b36925;
+}
+
+.btn-hero {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 50px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-hero:hover {
+  background-color: #b36925;
+  border-color: #b36925;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

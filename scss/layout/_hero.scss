@@ -3,20 +3,27 @@
 
 .hero {
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url('../img/images/HERO-IMAGE-01.jpg') center/cover no-repeat;
+        url('../img/images/HERO-IMAGE-01.webp') center/cover no-repeat;
   height: 100vh;
-  @include mix.flex-center;
-  text-align: center;
-  color: vars.$text-main;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5%;
+  text-align: left;
+  color: #fff;
 
   h1 {
     font-family: vars.$font-title;
     font-weight: 800;
+    font-size: 4rem;
+    color: #fff;
   }
 
   h2 {
     font-family: vars.$font-title;
     font-weight: 700;
-    color: vars.$accent;
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 16pt;
   }
 }
